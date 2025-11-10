@@ -1,14 +1,15 @@
 import './App.css'
 import Home from "./features/quiz/ui/page/home/Home.jsx";
-import Up from "./features/quiz/ui/components/homeComp/Up.jsx";
+import {Route, Routes} from "react-router-dom";
+import FormQuiz from "./features/quiz/ui/page/formQuiz/FormQuiz.jsx";
 
 function App() {
 
 	return (
-		<div className="app">
-			<Up />
-			<Home />
-		</div>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/formQuiz" element={<FormQuiz />} />
+        </Routes>
 	)
 }
 

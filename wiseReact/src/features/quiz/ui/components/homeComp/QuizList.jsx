@@ -5,7 +5,7 @@ import UseQuiz from "../../../application/UseQuiz.js";
 
 
 export default function QuizList() {
-	const {loading, error, listQuiz, addQuiz, removeQuiz} = UseQuiz();
+	const {listQuiz} = UseQuiz();
 
 	return (
 		<section className="sliderQuiz">

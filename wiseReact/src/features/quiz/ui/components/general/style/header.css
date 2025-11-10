@@ -1,0 +1,44 @@
+
+& header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--mainColor);
+
+    & .menuOpen{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        aspect-ratio: 4/4;
+        background-color: transparent;
+        border: none;
+
+        & img{
+            width: 100%;
+        }
+    }
+
+    & .logo{
+        color: var(--whiteColor);
+        font-size: 3rem;
+        font-weight: bold;
+        font-style: italic;
+        letter-spacing: 1.2rem;
+        text-decoration: none;
+    }
+
+    & .cup{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        aspect-ratio: 4/4;
+
+        & img{
+            width: 100%;
+        }
+    }
+}
