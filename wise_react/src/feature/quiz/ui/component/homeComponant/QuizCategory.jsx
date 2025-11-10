@@ -1,0 +1,6 @@
+
+function QuizCategory() {
+    return (
+        
+    );
+}

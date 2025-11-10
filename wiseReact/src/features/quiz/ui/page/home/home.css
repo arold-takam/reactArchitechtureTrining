@@ -1,0 +1,147 @@
+
+& main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 60%;
+
+	& .title{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		height: 4rem;
+		padding: 0 1rem;
+
+		& h1{
+			font-size: xx-large;
+		}
+
+		& .add{
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			background-color: var(--mainColor);
+			border-radius: 4rem;
+			color: var(--whiteColor);
+			font-size: large;
+			padding: 0.5rem;
+			text-decoration: none;
+
+			& img{
+				width: 3rem;
+				aspect-ratio: 4/4;
+			}
+		}
+	}
+
+	& .sliderQuiz{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		height: calc(100% - 4rem);
+		overflow: hidden;
+
+		& ul{
+			display: flex;
+			align-items: flex-start;
+			gap: 1rem;
+			width: 100%;
+			height: 90%;
+			list-style: none;
+			overflow: scroll hidden;
+			padding: 0.5rem;
+			scroll-behavior: smooth;
+
+			& li{
+				flex-shrink: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+				height: 100%;
+				background-color: var(--whiteColor);
+				border-radius: 2rem;
+				box-shadow: 0 0 4px rgba(0,0,0,0.4);
+				overflow: hidden;
+
+				& h2{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					height: 30%;
+					background-color: var(--secondaryColor);
+					color: var(--whiteColor);
+					font-size: 2rem;
+					font-style: italic;
+				}
+
+				& .det{
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-between;
+					width: 100%;
+					height: 70%;
+					padding: 0.5rem;
+
+					& p{
+						width: 100%;
+						font-size: small;
+						text-align: center;
+					}
+
+					& .stat{
+						align-self: flex-start;
+						color: var(--mainColor);
+						font-size: large;
+						font-weight: bold;
+					}
+
+					& .quizPage{
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 80%;
+						background-color: var(--secondaryColor);
+						border-radius: 4rem;
+						color: var(--whiteColor);
+						font-size: 2rem;
+						font-weight: bold;
+						padding: 0.5rem;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+		& .paginator{
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			gap: 2rem;
+			width: 100%;
+			height: 10%;
+			padding: 0 1rem;
+
+			& button{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100%;
+				aspect-ratio: 4/4;
+				background-color: var(--mainColor);
+				border: none;
+				border-radius: 50%;
+
+				& img{
+					height: 90%;
+					aspect-ratio: 4/4;
+				}
+			}
+		}
+	}
+}
