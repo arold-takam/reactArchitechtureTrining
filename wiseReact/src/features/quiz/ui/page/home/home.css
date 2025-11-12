@@ -127,6 +127,7 @@
                         color: var(--whiteColor);
                         font-size: 2rem;
                         font-style: italic;
+                        text-align: center;
                     }
 
                     & .det{
@@ -151,7 +152,7 @@
                             font-weight: bold;
                         }
 
-                        & .quizPage{
+                        & .quizCta{
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -162,6 +163,7 @@
                             font-size: 2rem;
                             font-weight: bold;
                             padding: 0.5rem;
+                            text-align: center;
                             text-decoration: none;
                         }
                     }

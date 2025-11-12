@@ -1,0 +1,186 @@
+
+& .quizPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100dvh;
+
+    & .up{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+        height: 8rem;
+        color: var(--secondaryColor);
+    }
+
+    & .all{
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 20dvh;
+        background-color: var(--secondaryColor);
+    }
+
+    & .questionList{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: calc(100% - 3rem - 8rem - 20dvh);
+        padding: .5rem;
+
+        & h2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        & .addQuest{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 18rem;
+            height: 3rem;
+            background-color: var(--mainColor);
+            border-radius: 2rem;
+            color: var(--whiteColor);
+            font-size: large;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        & .tit{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 3rem;
+
+            & h2{
+                width: max-content;
+                text-align: left;
+            }
+
+            & b{
+                background-color: var(--mainColor);
+                border-radius: 1rem;
+                color: var(--whiteColor);
+                font-size: large;
+                padding: 0.5rem;
+            }
+        }
+        & .takingQuestion{
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            width: 100%;
+            height: calc(100% - 3rem);
+            overflow: scroll hidden;
+
+            & .listQuest{
+                flex-shrink: 0;
+                display: flex;
+                align-items: flex-start;
+                width: 100%;
+                height: 100%;
+                overflow: scroll hidden;
+                scroll-behavior: smooth;
+
+                & .quest{
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1rem;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden scroll;
+                    scroll-behavior: smooth;
+                    padding: 0.5rem;
+
+                    & p{
+                        width: 98%;
+                        text-align: center;
+                        background-color: var(--silver);
+                        border-radius: 1rem;
+                        font-weight: bold;
+                        padding: 0.5rem;
+                    }
+
+                    & .listAnswer{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 1rem;
+                        width: 100%;
+                        list-style: none;
+
+                        & li{
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+                            width: 100%;
+                            background-color: var(--whiteColor);
+                            border-radius: 1rem;
+                            box-shadow: 0 0 4px rgba(0,0,0,0.25);
+                            font-size: large;
+                            padding: 0.5rem;
+
+                            & .checker{
+                                width: 2rem;
+                                aspect-ratio: 4/4;
+                                border: 2px solid var(--secondaryColor);
+                                border-radius: 50%;
+
+                                &.active{
+                                    background-color: var(--secondaryColor);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            & .ctaQuestion{
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                width: 100%;
+                height: 100%;
+
+                & button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 80%;
+                    height: 4rem;
+                    border-radius: 2rem;
+                    font-size: larger;
+                    font-weight: bold;
+                }
+                & .send{
+                    background-color: var(--mainColor);
+                    border: none;
+                    color: var(--whiteColor);
+                }
+                & .clear{
+                    background-color: transparent;
+                    border: 2px solid var(--mainColor);
+                    color: var(--mainColor);
+                }
+            }
+        }
+    }
+}

@@ -27,6 +27,10 @@ export default function UseQuiz() {
 		}
 	}
 
+    const getQuizByID = (id) => {
+        return api.getQuizByID(Number(id));
+    }
+
 	const removeQuiz  = (quizID)=>{
 		try {
 			api.deleteQuiz(quizID);
@@ -43,6 +47,7 @@ export default function UseQuiz() {
 		listQuiz,
 
 		addQuiz,
+        getQuizByID,
 		removeQuiz,
 	};
 }

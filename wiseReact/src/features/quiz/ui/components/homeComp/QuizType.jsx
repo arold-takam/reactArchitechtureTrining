@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 
 export default function QuizType({ quiz }) {
 	return (
@@ -6,7 +7,7 @@ export default function QuizType({ quiz }) {
 			<div className="det">
 				<p>{quiz.detail}</p>
 				<div className="stat"><i>Popularity: <b>{quiz.scorePop}</b>/10</i></div>
-				<a href="#" className="quizPage">Play</a>
+				<Link to={`/quizPage/${quiz.id}`} className="quizCta">Play</Link>
 			</div>
 		</li>
 	);

@@ -85,7 +85,7 @@ const data = [
 		label: "Culture Générale",
 		detail: "Testez vos connaissances sur divers sujets, de la science à l'art.",
 		scorePop: 8.5,
-		scorePlai: 910,
+		scorePlai: 9,
 		listQuestion: []
 	},
 	{
@@ -93,7 +93,7 @@ const data = [
 		label: "La Seconde Guerre Mondiale",
 		detail: "Un défi pour les passionnés d'histoire militaire et politique.",
 		scorePop: 6.2,
-		scorePlai: 455,
+		scorePlai: 4.5,
 		listQuestion: []
 	},
 	{
@@ -101,7 +101,7 @@ const data = [
 		label: "Cinéma Underground",
 		detail: "Pour les cinéphiles avertis et les experts en films cultes.",
 		scorePop: 3.9,
-		scorePlai: 120,
+		scorePlai: 6,
 		listQuestion: []
 	}
 ];
